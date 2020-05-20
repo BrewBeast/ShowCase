@@ -4,7 +4,8 @@
   "description": "Showcase project",
   "main": "bundle.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "nodemon ./server/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/BrewBeast/ShowCase/issues"
   },
-  "homepage": "https://github.com/BrewBeast/ShowCase#readme"
+  "homepage": "https://github.com/BrewBeast/ShowCase#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mapbox-gl": "^1.10.1",
+    "nodemon": "^2.0.3"
+  }
 }
