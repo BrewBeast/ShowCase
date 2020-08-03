@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <script src='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js'></script>
       <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
     </head>
     <body>
         <div id='page'>SOMETHING IS HERE</div>
+        <div id='map' style='width: 1000px; height: 750px;'></div>
+        <script>
+        mapboxgl.accessToken = 'MAPBOX_TOLKEN_HERE';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/satellite-v9',
+        center: [-122.4243, 37.809], // starting position [lng, lat]
+        zoom: 16 // starting zoom
+        });
+        </script>
+        <script src="tolken.js"></script>
     </body>
     <script src="bundle.js"></script>
 </html>
